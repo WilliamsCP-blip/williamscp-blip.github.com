@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo rojo oscuro */
+body {
+    background-color: #3e0a45; /* Fondo oscuro */
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Estilo de la barra de navegación */
+nav {
+    z-index: 2;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #6b0f0f, #3e0a45);
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Video de fondo */
+.videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Contenido sobre el video */
+.contenido_inicio {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con transparencia */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Título en el contenido */
+.contenido_sup h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Divisiones del contenido inferior */
+.contenido_inf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 20px;
+}
+
+.division_contenido {
+    width: 15vw;
+    height: 25vh;
+    margin: 1rem;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items:
